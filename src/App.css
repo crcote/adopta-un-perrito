@@ -1,0 +1,29 @@
+
+.cards {
+  grid-area:cards;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.header {
+  grid-area:header;
+  text-align: center;
+  background-color:#d3eee1;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+#root {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "cards"
+  "footer";
+  grid-template-rows: 1fr 8fr 1fr;
+}
